@@ -25,8 +25,8 @@
                     {% if DISPLAY_SUMMARY and article.summary|length > 0 %}
                         <p>{{ article.summary }}</p>
                     {% endif %}
-                    <a href="{{ SITEURL }}/{{ article.author.url }}">@{{ article.author }}</a>
-                    <span> in </span>
+                    <!-- <a href="{{ SITEURL }}/{{ article.author.url }}">@{{ article.author }}</a> -->
+                    <span> Posted in </span>
                     <span class="post_category"><a href="{{ SITEURL }}/{{ article.category.url }}" rel="bookmark"
                                                    title="Permalink to {{ article.category|striptags }}">[ {{ article.category }} ]</a></span>
                     <span class="post_date">{{ article.locale_date }}</span>
